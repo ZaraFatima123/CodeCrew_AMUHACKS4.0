@@ -107,3 +107,75 @@
 .footer p {
   margin: 0;
 }
+
+.pomodoro-wrapper {
+  display: grid;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.close-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #ff4a4a;
+}
+
+.pomodoro-resources {
+  color: #b0b0b0;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.pomodoro-resources h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.pomodoro-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pomodoro-resources li {
+  margin-bottom: 0.5rem;
+}
+
+.pomodoro-resources a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pomodoro-resources a:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke; /* ensures the underline is also white */
+}
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.video-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+}
