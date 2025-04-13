@@ -1,7 +1,12 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "lib": ["ES2023", "dom"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*"]
 }
