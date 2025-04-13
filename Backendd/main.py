@@ -164,7 +164,7 @@ def create_gradio_interface():
 
 def main():
     demo = create_gradio_interface()
-    demo.launch(share=False)
+    demo.launch(share=True)
 
 
 if __name__ == "__main__":
