@@ -1,21 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ added
 import './HomePage.css';
 
-const HomePage = () => {
+const HomePage = ({ setShowStudySchedule }) => {
+  const navigate = useNavigate(); // ✅ added
+
   const features = [
     {
       icon: '📚',
-      title: 'Chat with PDF',
-      description: 'Ask questions about your documents',
-      action: () => window.open('http://127.0.0.1:7860', '_blank'),
+      title: 'Chat with PDF + AI Study Planner',
+      description: 'Ask questions about your documents and plan your study schedule with us!',
+      action: () => window.open('https://huggingface.co/spaces/Zara-fatima/x'),
       variant: 'pdf'
-    },
-    {
-      icon: ' 📋',
-      title: 'AI Study Planner',
-      description: 'Upload your syllabus and get tailored schedule to study!',
-      action: () => alert('Coming soon!'),
-      variant: 'stats'
     },
     {
       icon: '⏱️',
@@ -31,12 +27,11 @@ const HomePage = () => {
       action: () => alert('Coming soon!'),
       variant: 'timer'
     },
-  
     {
       icon: '👥',
-      title: 'Study Groups',
+      title: 'Engage in Study group discussions!',
       description: 'Collaborate with classmates',
-      action: () => alert('Coming soon!'),
+      action: () => navigate('/forums'), // ✅ updated
       variant: 'groups'
     },
   ];
@@ -65,7 +60,6 @@ const HomePage = () => {
           ))}
         </div>
 
-        {/* Footer */}
       </div>
     </div>
   );
