@@ -1,7 +1,8 @@
-# StudyBuddy - AI Learning Assistant ✨
-
+ # StudyBuddy - AI Learning Assistant ✨
+ # AMUHACKS 4.0 #CSSAMU #AMU 
 > Developed by CodeCrew for AMUHACKS 4.0 – an AI-powered learning assistant that redefines the study experience.  
 > *Empowering students through personalized, interactive, and accessible education.* 🚀
+Team members: Zara Fatima Siddiqui, Vidyasagar Yadav and Syed Umar Ali.
 
 ## 📄 Table of Contents
 
