@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import Pomodoro from "./Component/Pomodoro";
 import { useState } from "react";
+import { Bot, Users, Timer, WalletCards } from "lucide-react";
 
 // 🛠 Define props type
 type HomePageProps = {
@@ -15,7 +16,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowStudySchedule }) => {
 
   const features = [
     {
-      icon: "📚",
+      icon: <Bot size={32} className="icon-wrapper"/>,
       title: "Chat with PDF + AI Study Planner",
       description:
         "Ask questions about your documents and plan your study schedule with us!",
@@ -23,21 +24,21 @@ const HomePage: React.FC<HomePageProps> = ({ setShowStudySchedule }) => {
       variant: "pdf",
     },
     {
-      icon: "⏱️",
+      icon: <Timer size={32} className="icon-wrapper"/>,
       title: "Pomodoro Sessions",
       description: "Focus with timed study sessions",
       action: () => setShowPomodoro(true),
       variant: "timer",
     },
     {
-      icon: "📇",
+      icon: <WalletCards size={32} className="icon-wrapper"/>,
       title: "Generate flashcards",
       description: "generate flashcards",
       action: () => alert("Coming soon!"),
       variant: "timer",
     },
     {
-      icon: "👥",
+      icon: <Users size={32} className="icon-wrapper"/>,
       title: "Engage in Study group discussions!",
       description: "Collaborate with classmates",
       action: () => alert("Coming soon!"),
