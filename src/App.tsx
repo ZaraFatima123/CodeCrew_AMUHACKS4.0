@@ -17,6 +17,7 @@ function App() {
 
   return (
     <HomePage setShowStudySchedule={setShowStudySchedule} />
+    
   );
 }
 
