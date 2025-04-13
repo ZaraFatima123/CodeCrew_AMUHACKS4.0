@@ -2,7 +2,7 @@
 
 .homepage {
   font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e; /* Muted dark background similar to Vite's theme */
+  /* background-color: #1e1e1e; Muted dark background similar to Vite's theme */
   color: #e4e4e4; /* Light gray text color */
   min-height: 100vh;
   display: flex;
@@ -44,10 +44,11 @@
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 15px;
   margin-top: 30px;
+  
 }
 
 .feature-card {
-  background: linear-gradient(145deg, #2c2c2c, #383838);
+  background: linear-gradient(145deg, #2c2c2c, #000000);
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
   padding: 18px;
