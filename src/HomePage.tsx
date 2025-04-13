@@ -41,7 +41,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowStudySchedule }) => {
       title: "Engage in Study group discussions!",
       description: "Collaborate with classmates",
       action: () => alert("Coming soon!"),
-      variant: "groups",
+      variant: "timer",
     },
   ];
 
