@@ -26,6 +26,11 @@ Team members: Zara Fatima Siddiqui, Vidyasagar Yadav and Syed Umar Ali.
     - 📅 **Study Management Tools:** Upcoming features will include tools to organize study sessions and track goals.​
     - 🎮 **Interactive Exercises:** Plans to incorporate engaging materials and quizzes to reinforce learning.​
     - 📲 **Mobile Applications:** Intended expansion to dedicated mobile applications for broader accessibility.
+ 
+## Screenshots:
+ ![WhatsApp Image 2025-04-14 at 02 20 22_509199a9](https://github.com/user-attachments/assets/3549d224-43d8-4a7a-b963-5adef48c8f7d)
+
+
 
 ## 💻 Tech Stack
 
