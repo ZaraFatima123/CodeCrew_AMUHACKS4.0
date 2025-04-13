@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "target": "ES2022",
-    "lib": ["ES2023", "dom"],
+    "allowImportingTsExtensions": true,
     "moduleResolution": "node",
-    "allowJs": true,
+    "target": "ES2022",
+    "jsx": "react-jsx",
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "lib": ["ES2023", "dom"]
   },
   "include": ["src/**/*"]
 }
