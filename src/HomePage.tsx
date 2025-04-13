@@ -40,7 +40,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowStudySchedule }) => {
       icon: "👥",
       title: "Engage in Study group discussions!",
       description: "Collaborate with classmates",
-      action: () => navigate("/forums"),
+      action: () => alert("Coming soon!"),
       variant: "groups",
     },
   ];
