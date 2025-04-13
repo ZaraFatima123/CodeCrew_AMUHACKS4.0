@@ -1,13 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // ✅ added
+import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import Pomodoro from "./Component/Pomodoro";
 import { useState } from "react";
 
-const HomePage = ({ setShowStudySchedule }) => {
-  const navigate = useNavigate(); // ✅ added
-  const [showPomodoro, setShowPomodoro] = useState(false);
+// 🛠 Define props type
+type HomePageProps = {
+  setShowStudySchedule: (value: boolean) => void;
+};
 
+const HomePage: React.FC<HomePageProps> = ({ setShowStudySchedule }) => {
+  const navigate = useNavigate();
+  const [showPomodoro, setShowPomodoro] = useState(false);
 
   const features = [
     {
@@ -36,7 +40,7 @@ const HomePage = ({ setShowStudySchedule }) => {
       icon: "👥",
       title: "Engage in Study group discussions!",
       description: "Collaborate with classmates",
-      action: () => navigate("/forums"), // ✅ updated
+      action: () => navigate("/forums"),
       variant: "groups",
     },
   ];
@@ -44,13 +48,11 @@ const HomePage = ({ setShowStudySchedule }) => {
   return (
     <div className="homepage">
       <div className="container">
-        {/* Header */}
         <header className="header">
           <h1 className="title">StudyBuddy</h1>
           <p className="subtitle">Your personal learning assistant</p>
         </header>
 
-        {/* Features Grid */}
         <div className="features-grid">
           {features.map((feature, index) => (
             <div
@@ -64,7 +66,7 @@ const HomePage = ({ setShowStudySchedule }) => {
             </div>
           ))}
         </div>
-        {/* Pomodoro Section */}
+
         {showPomodoro && (
           <div className="pomodoro-wrapper">
             <Pomodoro />
