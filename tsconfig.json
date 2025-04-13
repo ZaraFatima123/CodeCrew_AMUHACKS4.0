@@ -6,7 +6,13 @@
     "jsx": "react-jsx",
     "strict": true,
     "noEmit": true,
-    "lib": ["ES2023", "dom"]
+    "lib": ["ES2023", "dom"],
+    
+    // ✅ ADD THESE:
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "ESNext",                       // 👈 Optional but helps with modern imports
+    "resolveJsonModule": true                 // 👈 Optional if you use JSON files
   },
   "include": ["src/**/*"]
 }
