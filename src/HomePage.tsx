@@ -4,6 +4,7 @@ import "./HomePage.css";
 import Pomodoro from "./Component/Pomodoro";
 import { useState } from "react";
 import { Bot, Users, Timer, WalletCards } from "lucide-react";
+import "./App.css"
 
 // 🛠 Define props type
 type HomePageProps = {
