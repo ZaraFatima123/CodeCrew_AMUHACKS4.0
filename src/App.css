@@ -1,29 +1,62 @@
 body {
   margin: 0;
-  background-image: url('/ccx.png'); /* ✅ Correct path if image is in public folder */
+  background-image: url('./ccx.png'); /* Adjust path to your image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
+  /* padding: 2rem; */
   text-align: left;
 }
 
-/* Remove any height/boxy overlay if present */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
 .App-header {
-  background-color: transparent !important; /* ✅ Forcefully make it transparent */
-  min-height: auto; /* ✅ Don't force full screen height */
-  width: 100%;
+  background-color:transparent;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
+} still does not get resoalbed
