@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./HomePage.css";
+// import "./HomePage.css";
 import Pomodoro from "./Component/Pomodoro";
 import { useState } from "react";
 import { Bot, Users, Timer, WalletCards } from "lucide-react";
