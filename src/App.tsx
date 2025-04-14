@@ -11,6 +11,7 @@
 
 import React, { useState } from 'react';
 import HomePage from './HomePage';
+import "./App.css"
 
 function App() {
   const [showStudySchedule, setShowStudySchedule] = useState(false);
