@@ -3,7 +3,6 @@
 .homepage {
   font-family: 'Arial', sans-serif;
   background-color: transparent;
-  color: #e4e4e4; /* Light gray text color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
