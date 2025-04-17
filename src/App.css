@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url('./ccx.png'); /* Adjust path to your image */
+  background-image: url('./ccx.png'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
